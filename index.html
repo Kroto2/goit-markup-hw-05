@@ -16,7 +16,7 @@
         <a href="index.html" class="Logo"><span>Web</span>Studio</a>
         <nav class="nav-container">
         <ul class="nav-container-list">
-            <li><a class="site-nav" href="index.html">Agencja</a></li>
+            <li><a class="site-nav active" href="index.html">Agencja</a></li>
                 <li><a class="site-nav" href="portfolio.html">Portfolio</a></li>
                 <li><a class="site-nav" href="contacts.html">Kontakty</a></li>
             </ul>
@@ -39,7 +39,7 @@
         <section class="main-background-container">
             <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA <br />
                 DLA WASZEGO BIZNESU</h1>
-            <button class="main-button" type="button">Zamów usługę</button>
+            <button class="main-button" type="button" data-modal-open>Zamów usługę</button>
         </section>
         <section class="section">
             <div class="container">
@@ -96,13 +96,28 @@
             <h2 class="team-header">Czym się zajmujemy</h2>
             <ul class="team-list">
                 <li>
-                    <img src="./images/boximg1.jpg" alt="Pisanie kodu" width="370" height="294" />
+                <figure>
+                    <img src="./images/boximg1.jpg" alt="Aplikacje komputerowe" width="370" height="294" />
+                    <figcaption class="process-description">
+                        APLIKACJE KOMPUTEROWE
+                    </figcaption>
+                </figure>
                 </li>
                 <li>
+                <figure>
                     <img src="./images/boximg2.jpg" alt="Pisanie aplikacji mobilnych" width="370" height="294" />
+                    <figcaption class="process-description">
+                        APLIKACJE MOBILNE
+                    </figcaption>
+                </figure>
                 </li>
                 <li>
-                    <img src="./images/boximg3.jpg" alt="Tworzenie appek na ios" width="370" height="294" />
+                <figure>
+                    <img src="./images/boximg3.jpg" alt="Rozwiązania graficzne" width="370" height="294" />
+                    <figcaption class="process-description">
+                        ROZWIĄZANIA GRAFICZNE
+                    </figcaption>
+                </figure>
                 </li>
             </ul>
             </div>
@@ -369,5 +384,11 @@
         </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-button" type="button" data-modal-close>X</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
